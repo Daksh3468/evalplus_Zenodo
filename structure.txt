@@ -1,0 +1,1423 @@
+Folder PATH listing for volume Windows-SSD
+Volume serial number is 00000012 ECBE:AD48
+C:.
+¦   .gitignore
+¦   CITATION.cff
+¦   Dockerfile
+¦   LICENSE
+¦   MANIFEST.in
+¦   ORIGINAL_README.md
+¦   pyproject.toml
+¦   README.md
+¦   release.sh
+¦   requirements-evalperf.txt
+¦   requirements.txt
+¦   setup.cfg
+¦   structure.txt
+¦   
++---analysis
+¦   ¦   energy_post_processing.py
+¦   ¦   energy_used_by_experiment.py
+¦   ¦   eoh_loading.py
+¦   ¦   llm4effi_loading.py
+¦   ¦   loading_utils.py
+¦   ¦   notebook.html
+¦   ¦   notebook.py
+¦   ¦   okabe_ito_theme.py
+¦   ¦   simple10_loading.py
+¦   ¦   stats_post_processing.py
+¦   ¦   utils.py
+¦   ¦   
+¦   +---energy_logs
+¦   ¦       .directory
+¦   ¦       2025-03-20_12-55-27-chiclet-6.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-03-21_10-08-54-chuc-7.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-03-21_10-08-54-chuc-7.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-03-25_17-42-52-chifflot-7.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-03-25_17-42-52-chifflot-7.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-03-25_18-27-43-chuc-6.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-03-25_18-27-43-chuc-6.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-03-25_19-51-05-chuc-5.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-03-25_19-51-05-chuc-5.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-03-31_13-30-44-chifflot-7.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-03-31_13-30-44-chifflot-7.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-02_10-56-38-chuc-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-02_10-56-38-chuc-3.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-04_15-35-45-chuc-7.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-04_15-35-45-chuc-7.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-05_09-46-00-chuc-4.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-05_09-46-00-chuc-4.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-07_10-25-17-chuc-6.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-07_10-25-17-chuc-6.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-07_18-17-50-chuc-4.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-07_18-17-50-chuc-4.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-08_08-51-05-chuc-1.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-08_08-51-05-chuc-1.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-08_08-57-52-chuc-2.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-08_08-57-52-chuc-2.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-08_13-39-26-chiclet-5.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-08_19-02-10-chiclet-5.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-09_13-54-21-chiclet-7.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-09_14-02-14-chuc-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-09_14-02-14-chuc-3.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-10_13-29-08-chuc-5.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-10_13-29-08-chuc-5.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-10_13-39-23-chiclet-8.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-10_20-19-44-chiclet-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-10_21-42-16-chiclet-7.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-10_21-46-36-chiclet-6.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-10_21-49-21-chiclet-1.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-10_21-50-57-chiclet-5.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-10_21-52-18-chiclet-4.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-10_21-55-41-chiclet-8.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-10_21-56-24-chiclet-2.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-11_14-25-05-chuc-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-11_14-25-05-chuc-3.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-11_14-29-00-chuc-4.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-11_14-29-00-chuc-4.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-11_18-27-52-chiclet-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-11_19-00-05-chuc-2.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-11_19-00-05-chuc-2.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-15_13-30-27-chuc-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-15_13-30-27-chuc-3.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-16_08-30-23-chuc-8.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-16_08-30-23-chuc-8.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-16_19-39-35-chuc-6.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-16_19-39-35-chuc-6.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-17_19-13-41-chuc-6.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-17_19-13-41-chuc-6.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-18_13-39-41-chiclet-7.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-18_14-26-51-chiclet-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-19_21-07-43-chuc-2.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-19_21-07-43-chuc-2.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-19_21-08-24-chuc-8.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-19_21-08-24-chuc-8.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-19_21-08-46-chuc-4.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-19_21-08-46-chuc-4.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-19_21-09-16-chuc-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-19_21-09-16-chuc-3.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-20_08-10-38-chiclet-5.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-20_08-11-54-chiclet-4.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-22_15-34-19-chuc-2.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-22_15-34-19-chuc-2.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-22_15-38-36-chiclet-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-22_15-40-39-chiclet-4.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-22_18-53-52-chiclet-1.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-22_19-00-58-chiclet-4.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-23_15-01-52-chuc-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-23_15-01-52-chuc-3.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-23_15-08-15-chuc-4.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-23_15-08-15-chuc-4.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-24_13-34-32-chuc-1.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-24_13-34-32-chuc-1.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-24_13-36-54-chiclet-1.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-24_13-39-05-chuc-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-24_13-39-05-chuc-3.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-24_13-39-23-chiclet-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-25_08-17-05-chiclet-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-25_11-39-25-chuc-2.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-25_11-39-25-chuc-2.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-25_11-41-50-chuc-4.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-25_11-41-50-chuc-4.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-26_15-02-34-chiclet-1.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-26_15-06-04-chuc-2.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-26_15-06-04-chuc-2.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-26_15-15-35-chuc-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-26_15-15-35-chuc-3.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-26_15-15-57-chuc-4.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-26_15-15-57-chuc-4.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-26_15-16-05-chuc-7.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-26_15-16-05-chuc-7.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-26_16-37-23-chiclet-5.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-27_15-44-21-chuc-2.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-27_15-44-21-chuc-2.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-27_15-44-30-chiclet-5.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-27_15-48-11-chuc-4.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-27_15-48-11-chuc-4.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-27_15-48-37-chuc-6.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-27_15-48-37-chuc-6.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-27_15-50-25-chiclet-7.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-27_15-51-15-chuc-8.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-27_15-51-15-chuc-8.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-27_15-52-18-chuc-7.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-04-27_15-52-18-chuc-7.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-04-28_14-44-38-chiclet-8.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-01_10-17-55-chiclet-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-01_10-19-28-chuc-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-01_10-19-28-chuc-3.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-05-01_10-21-46-chiclet-1.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-01_10-23-37-chiclet-8.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-02_08-39-37-chuc-8.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-02_08-39-37-chuc-8.lille.grid5000.fr-gpu.csv
+¦   ¦       2025-05-02_14-42-22-chiclet-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-02_14-43-35-chiclet-1.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-02_14-46-48-chiclet-8.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-04_07-39-27-chiclet-4.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-12_09-50-24-chiclet-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-12_09-55-17-chiclet-5.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-12_19-12-45-chiclet-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-12_22-35-31-chiclet-4.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-12_22-36-16-chiclet-5.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-12_22-37-22-chiclet-6.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-12_22-38-23-chiclet-7.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-12_22-38-44-chiclet-8.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-13_09-32-17-chiclet-6.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-13_09-32-26-chiclet-1.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-15_15-55-38-chiclet-6.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-15_15-59-07-chiclet-1.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-16_07-52-18-chiclet-7.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-16_07-53-14-chiclet-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-16_19-04-03-chiclet-4.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-16_19-04-53-chiclet-3.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-16_19-06-01-chiclet-1.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-16_19-09-25-chiclet-7.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-16_19-10-35-chiclet-8.lille.grid5000.fr-cpu.csv
+¦   ¦       2025-05-16_19-12-00-chiclet-5.lille.grid5000.fr-cpu.csv
+¦   ¦       
+¦   +---layouts
+¦           notebook.grid.json
+¦           
++---docs
+¦       cli.md
+¦       evalperf.md
+¦       execution.md
+¦       
++---evalplus
+¦   ¦   codegen.py
+¦   ¦   config.py
+¦   ¦   evalopti.py
+¦   ¦   evalperf.py
+¦   ¦   evaluate.py
+¦   ¦   inputgen.py
+¦   ¦   lecacy_sanitize.py
+¦   ¦   profile_energy.py
+¦   ¦   sanitize.py
+¦   ¦   syncheck.py
+¦   ¦   utils.py
+¦   ¦   _version.py
+¦   ¦   __init__.py
+¦   ¦   
+¦   +---data
+¦   ¦       humaneval.py
+¦   ¦       mbpp.py
+¦   ¦       utils.py
+¦   ¦       __init__.py
+¦   ¦       
+¦   +---eval
+¦   ¦       utils.py
+¦   ¦       _special_oracle.py
+¦   ¦       __init__.py
+¦   ¦       
+¦   +---gen
+¦   ¦   ¦   chatgpt_gen.py
+¦   ¦   ¦   mut_gen.py
+¦   ¦   ¦   type_mut.py
+¦   ¦   ¦   __init__.py
+¦   ¦   ¦   
+¦   ¦   +---util
+¦   ¦           anthropic_request.py
+¦   ¦           openai_request.py
+¦   ¦           __init__.py
+¦   ¦           
+¦   +---perf
+¦   ¦   ¦   energy.py
+¦   ¦   ¦   profile.py
+¦   ¦   ¦   sampling.py
+¦   ¦   ¦   sas.py
+¦   ¦   ¦   select_pe_inputs.py
+¦   ¦   ¦   select_pe_tasks.py
+¦   ¦   ¦   __init__.py
+¦   ¦   ¦   
+¦   ¦   +---optimizer
+¦   ¦           eoh.py
+¦   ¦           llm4effi.py
+¦   ¦           optimizer.py
+¦   ¦           simple10.py
+¦   ¦           __init__.py
+¦   ¦           
+¦   +---provider
+¦           base.py
+¦           openai.py
+¦           utility.py
+¦           __init__.py
+¦           
++---evalplus.egg-info
+¦       dependency_links.txt
+¦       entry_points.txt
+¦       PKG-INFO
+¦       requires.txt
+¦       SOURCES.txt
+¦       top_level.txt
+¦       
++---evalplus_results
+¦   +---evalperf
+¦           .directory
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_1.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_1.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_1_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_1_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_1_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_2.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_2.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_2_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_2_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_2_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_3.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_3.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_3_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_3_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_3_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_4.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_4.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_4_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_4_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_4_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cod_summary_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_1.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_1.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_1_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_1_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_1_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_2.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_2.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_2_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_2_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_2_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_3.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_3.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_3_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_3_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_3_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_4.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_4.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_4_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_4_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_4_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_cot_summary_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_0.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_0.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_0_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_0_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_0_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_1.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_1.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_1_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_1_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_1_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_2.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_2.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_2_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_2_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_2_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_3.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_3.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_3_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_3_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_3_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_4.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_4.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_4_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_4_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_4_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_eoh_summary_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_0.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_0.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_0_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_0_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_0_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_1.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_1.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_1_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_1_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_1_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_2.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_2.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_2_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_2_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_2_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_3.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_3.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_3_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_3_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_3_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_4.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_4.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_4_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_4_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_4_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_llm4effi_summary_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_1.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_1.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_1_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_1_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_1_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_2.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_2.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_2_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_2_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_2_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_3.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_3.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_3_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_3_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_3_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_4.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_4.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_4_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_4_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_4_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-exec-feedback_summary_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_1.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_1.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_1_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_1_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_1_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_2.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_2.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_2_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_2_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_2_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_3.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_3.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_3_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_3_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_3_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_4.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_4.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_4_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_4_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_4_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_self-refine-nl-feedback_summary_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_1.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_1.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_1_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_1_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_1_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_2.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_2.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_2_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_2_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_2_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_3.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_3.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_3_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_3_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_3_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_4.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_4.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_4_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_4_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_4_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple10_summary_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_1.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_1.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_1_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_1_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_1_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_2.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_2.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_2_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_2_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_2_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_3.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_3.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_3_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_3_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_3_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_4.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_4.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_4_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_4_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_4_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.2_simple_summary_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_1.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_1.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_1_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_1_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_1_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_2.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_2.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_2_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_2_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_2_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_3.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_3.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_3_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_3_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_3_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_4.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_4.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_4_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_4_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_4_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-exec-feedback_summary_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_1.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_1.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_1_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_1_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_1_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_2.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_2.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_2_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_2_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_2_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_3.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_3.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_3_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_3_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_3_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_4.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_4.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_4_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_4_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_4_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.4_self-refine-nl-feedback_summary_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_1.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_1.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_1_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_1_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_1_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_2.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_2.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_2_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_2_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_2_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_3.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_3.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_3_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_3_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_3_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_4.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_4.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_4_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_4_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_4_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-exec-feedback_summary_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_1.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_1.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_1_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_1_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_1_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_2.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_2.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_2_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_2_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_2_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_3.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_3.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_3_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_3_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_3_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_4.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_4.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_4_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_4_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_4_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.6_self-refine-nl-feedback_summary_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_1.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_1.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_1_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_1_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_1_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_2.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_2.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_2_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_2_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_2_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_3.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_3.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_3_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_3_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_3_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_4.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_4.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_4_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_4_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_4_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-exec-feedback_summary_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_1.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_1.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_1_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_1_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_1_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_2.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_2.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_2_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_2_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_2_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_3.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_3.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_3_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_3_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_3_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_4.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_4.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_4_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_4_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_4_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_0.8_self-refine-nl-feedback_summary_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_1.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_1.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_1_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_1_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_1_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_2.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_2.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_2_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_2_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_2_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_3.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_3.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_3_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_3_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_3_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_4.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_4.raw.jsonl
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_4_evalopti_results.brief.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_4_evalopti_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_4_sample-level_evalperf-classic_energy_results.json
+¦           bigcode--starcoder2-15b-instruct-v0.1_openai_temp_1.0_self-refine-exec-feedback_summary_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_1.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_1.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_1_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_1_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_1_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_2.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_2.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_2_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_2_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_2_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_3.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_3.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_3_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_3_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_3_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_4.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_4.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_4_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_4_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_4_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cod_summary_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_1.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_1.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_1_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_1_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_1_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_2.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_2.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_2_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_2_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_2_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_3.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_3.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_3_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_3_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_3_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_4.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_4.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_4_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_4_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_4_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_cot_summary_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_0.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_0.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_0_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_0_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_0_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_1.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_1.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_1_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_1_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_1_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_2.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_2.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_2_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_2_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_2_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_3.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_3.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_3_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_3_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_3_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_4.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_4.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_4_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_4_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_4_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_eoh_summary_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_0.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_0.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_0_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_0_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_0_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_1.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_1.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_1_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_1_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_1_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_2.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_2.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_2_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_2_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_2_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_3.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_3.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_3_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_3_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_3_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_4.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_4.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_4_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_4_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_4_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_llm4effi_summary_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_1.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_1.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_1_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_1_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_1_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_2.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_2.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_2_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_2_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_2_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_3.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_3.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_3_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_3_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_3_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_4.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_4.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_4_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_4_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_4_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-exec-feedback_summary_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_1.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_1.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_1_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_1_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_1_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_2.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_2.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_2_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_2_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_2_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_3.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_3.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_3_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_3_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_3_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_4.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_4.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_4_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_4_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_4_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_self-refine-nl-feedback_summary_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_1.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_1.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_1_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_1_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_1_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_2.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_2.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_2_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_2_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_2_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_3.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_3.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_3_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_3_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_3_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_4.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_4.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_4_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_4_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_4_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple10_summary_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_1.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_1.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_1_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_1_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_1_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_2.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_2.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_2_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_2_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_2_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_3.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_3.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_3_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_3_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_3_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_4.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_4.raw.jsonl
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_4_evalopti_results.brief.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_4_evalopti_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_4_sample-level_evalperf-classic_energy_results.json
+¦           deepseek-ai--DeepSeek-R1-Distill-Qwen-14B_openai_temp_0.2_simple_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_1.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_2.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_3.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_4.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cod_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_1.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_2.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_3.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_4.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_cot_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_0.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_0.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_0_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_0_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_0_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_1.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_2.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_3.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_4.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_eoh_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_0.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_0.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_0_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_0_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_0_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_1.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_2.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_3.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_4.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_llm4effi_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_1.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_2.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_3.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_4.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-exec-feedback_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_1.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_2.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_3.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_4.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_self-refine-nl-feedback_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_1.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_2.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_3.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_4.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple10_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_1.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_2.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_3.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_4.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-14B-Instruct_openai_temp_0.2_simple_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_1.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_2.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_3.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_4.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cod_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_1.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_2.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_3.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_4.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_cot_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_0.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_0.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_0_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_0_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_0_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_1.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_2.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_3.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_4.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_eoh_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_0.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_0.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_0_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_0_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_0_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_1.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_2.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_3.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_4.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_llm4effi_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_1.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_2.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_3.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_4.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-exec-feedback_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_1.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_2.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_3.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_4.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_self-refine-nl-feedback_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_1.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_2.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_3.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_4.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple10_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_1.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_2.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_3.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_4.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-3B-Instruct_openai_temp_0.2_simple_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_1.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_2.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_3.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_4.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cod_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_1.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_2.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_3.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_4.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_cot_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_0.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_0.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_0_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_0_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_0_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_1.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_2.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_3.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_4.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_eoh_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_0.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_0.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_0_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_0_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_0_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_1.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_2.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_3.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_4.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_llm4effi_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_1.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_2.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_3.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_4.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-exec-feedback_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_1.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_2.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_3.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_4.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_self-refine-nl-feedback_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_1.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_2.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_3.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_4.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple10_summary_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_1.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_1.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_1_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_1_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_1_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_2.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_2.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_2_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_2_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_2_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_3.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_3.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_3_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_3_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_3_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_4.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_4.raw.jsonl
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_4_evalopti_results.brief.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_4_evalopti_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_4_sample-level_evalperf-classic_energy_results.json
+¦           Qwen--Qwen2.5-Coder-7B-Instruct_openai_temp_0.2_simple_summary_evalopti_results.json
+¦           
++---figures
+¦       .directory
+¦       fig_correctness_by_model_all_iter.pdf
+¦       fig_correctness_by_model_first_opti_iter.pdf
+¦       fig_correctness_by_model_last_iter.pdf
+¦       fig_correctness_of_optimizers_by_iteration_all_models.pdf
+¦       fig_correctness_of_optimizers_by_iteration_best_model.pdf
+¦       fig_energy_by_model_all_iter.pdf
+¦       fig_energy_by_model_first_opti_iter.pdf
+¦       fig_energy_by_model_last_iter.pdf
+¦       fig_energy_per_result_over_iterations_all_models.pdf
+¦       fig_energy_per_result_over_iterations_best_model.pdf
+¦       fig_performance_delta_by_model_first_opti_iter.pdf
+¦       fig_performance_delta_by_model_last_iter.pdf
+¦       
++---tests
+¦       requirements.txt
+¦       test_legacy_sanitizer.py
+¦       test_treesitter_sanitizer.py
+¦       
++---tools
+    ¦   checker.py
+    ¦   collect_valid_solutions.py
+    ¦   directory_to_jsonl.py
+    ¦   filter_inputs.py
+    ¦   merge_dataset.py
+    ¦   render.py
+    ¦   requirements.txt
+    ¦   sanitize.py
+    ¦   stat_plus.py
+    ¦   viz_passrate.py
+    ¦   zip_solutions.py
+    ¦   
+    +---evalperf
+    ¦       hf_upload.py
+    ¦       intra_model_viz.py
+    ¦       pairwise_heatmap.py
+    ¦       viz_by_params.py
+    ¦       
+    +---humaneval
+    ¦       check_ground_truth.py
+    ¦       filter_extreme.py
+    ¦       fix_utils.py
+    ¦       fix_v011.py
+    ¦       fix_v012.py
+    ¦       fix_v013.py
+    ¦       fix_v014.py
+    ¦       fix_v015.py
+    ¦       fix_v016.py
+    ¦       fix_v017.py
+    ¦       fix_v018.py
+    ¦       fix_v019.py
+    ¦       init_ground_truth.py
+    ¦       init_plus.py
+    ¦       to_original_fmt.py
+    ¦       
+    +---mbpp
+    ¦       check_ground_truth.py
+    ¦       filter_extreme.py
+    ¦       fix_v010.py
+    ¦       fix_v020.py
+    ¦       init_ground_truth.py
+    ¦       init_plus.py
+    ¦       to_original_fmt.py
+    ¦       
+    +---tsr
+    ¦       .gitignore
+    ¦       coverage_init.py
+    ¦       minimization.py
+    ¦       mutation_init.py
+    ¦       README.md
+    ¦       requirements.txt
+    ¦       run.py
+    ¦       sample_init.py
+    ¦       utils.py
+    ¦       __init__.py
+    ¦       
+    +---_experimental
+            evaluate_coverage.py
+            evaluate_runtime.py
+            generate_big_input.py
+            README.md
+            set_cover.py
+            topset_distill.py
+            type_mut_for_eff.py
+            
