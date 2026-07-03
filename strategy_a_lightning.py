@@ -4,8 +4,8 @@ strategy_a_lightning.py
 LIGHTNING AI SIDE of Strategy A.
 
 What this script does:
-  1. Runs evalplus.evaluate with GPU energy logging (nvidia-smi)
-  2. Parses evalplus outputs into a flat sample schema
+  1. Runs evalplus.evalopti with GPU energy logging (nvidia-smi)
+  2. Parses EvalOpti outputs into a flat sample schema
   3. Exports passing samples as standalone Python scripts
   4. Bundles everything into a single tar.gz for transfer to RAPL machine
   5. After you copy exec_energy_rapl.csv back, computes final BEP
@@ -127,106 +127,108 @@ class GpuLogger:
 # EVALPLUS PARSER  (inline, no dependency on parse_evalplus_outputs.py)
 # ─────────────────────────────────────────────────────────────────────────────
 
-def find_evalplus_files(results_dir: str, model: str, dataset: str):
+def find_evalopti_results(results_dir, model):
+
     import glob
-    slug = model.replace("/", "--")
-    base = Path(results_dir) / dataset
-    raws  = glob.glob(str(base / f"{slug}*.raw.jsonl"))
-    # evals = glob.glob(str(base / "*.jsonl"))
-    # evals = [f for f in evals if not f.endswith(".raw.jsonl")]
-    # fallback: any file
-    if not raws:  raws  = glob.glob(str(base / "*.raw.jsonl"))
+
     slug = model.replace("/", "--")
 
-    evals = glob.glob(
-        str(base / f"{slug}*_evalperf_results.json")
+    base = Path(results_dir)
+
+    files = glob.glob(
+        str(base / "**" / f"{slug}*_evalopti_results.json"),
+        recursive=True,
     )
 
-    if not evals:
-        evals = glob.glob(str(base / "*_evalperf_results.json"))
-    
-    return (
-        raws[0] if raws else None,
-        evals[0] if evals else None,
-    )
+    if not files:
+        return None
 
-def parse_evalplus_to_samples(
-    raw_path: str,
-    eval_path: str,
-    model: str,
-    method: str,
-    iteration: int,
-    e_optim_wh: float,
-    dataset: str,
-) -> list[dict]:
-    # Load eval results
-        # EvalPlus codegen does not produce evaluation results
-        # Load EvalPerf results
-    with open(eval_path) as f:
-        eval_data = json.load(f)
+    return sorted(files)[-1]
 
-    results_map = {}
+# def parse_evalplus_to_samples(
+#     raw_path: str,
+#     eval_path: str,
+#     model: str,
+#     method: str,
+#     iteration: int,
+#     e_optim_wh: float,
+#     dataset: str,
+# ) -> list[dict]:
+#     # Load eval results
+#         # EvalPlus codegen does not produce evaluation results
+#         # Load EvalPerf results
+#     with open(eval_path) as f:
+#         eval_data = json.load(f)
 
-    for task_id, task in eval_data["eval"].items():
-        results_map[task_id] = {
-            r["sample_id"]: r["passed"]
-            for r in task.get("results", [])
-        }
-    # Load task metadata (used to export executable test harnesses)
-    humaneval_tasks = get_human_eval_plus()
-    mbpp_tasks = get_mbpp_plus()
-    # Load raw generations
-    samples = []
-    with open(raw_path) as f:
-        for idx, line in enumerate(f):
-            line = line.strip()
-            if not line:
-                continue
-            row = json.loads(line)
-            task_id    = row.get("task_id", row.get("problem", f"task_{idx}"))
-            code       = row.get("solution", row.get("completion", ""))
-            sample_idx = row.get("_index", idx)
-            sample_id = row["sample_id"]
+#     results_map = {}
 
-            passed = results_map.get(task_id, {}).get(sample_id, False)
+#     for task_id, task in eval_data["eval"].items():
+#         results_map[task_id] = {
+#             r["sample_id"]: r["passed"]
+#             for r in task.get("results", [])
+#         }
+#     # Load task metadata (used to export executable test harnesses)
+#     humaneval_tasks = get_human_eval_plus()
+#     mbpp_tasks = get_mbpp_plus()
+#     # Load raw generations
+#     samples = []
+#     with open(raw_path) as f:
+#         for idx, line in enumerate(f):
+#             line = line.strip()
+#             if not line:
+#                 continue
+#             row = json.loads(line)
+#             task_id    = row.get("task_id", row.get("problem", f"task_{idx}"))
+#             code       = row.get("solution", row.get("completion", ""))
+#             sample_idx = row.get("_index", idx)
+#             sample_id = row["sample_id"]
 
-            # Build executable test harness
-            test_code = ""
+#             passed = results_map.get(task_id, {}).get(sample_id, False)
 
-            if task_id.startswith("HumanEval/"):
-                prob = humaneval_tasks[task_id]
-                test_code = (
-                    prob["test"]
-                    + "\n\n"
-                    + f'check({prob["entry_point"]})'
-                )
+#             # Build executable test harness
+#             test_code = ""
 
-            elif task_id.startswith("Mbpp/"):
-                prob = mbpp_tasks[task_id]
-                test_code = prob["assertion"]
+#             if task_id.startswith("HumanEval/"):
+#                 prob = humaneval_tasks[task_id]
+#                 test_code = (
+#                     prob["test"]
+#                     + "\n\n"
+#                     + f'check({prob["entry_point"]})'
+#                 )
 
-            samples.append({
-                "task_id":      f"{dataset.upper()}/{task_id}" if "/" not in task_id else task_id,
-                "model":        model,
-                "method":       method,
-                "iteration":    iteration,
-                "sample_idx":   sample_idx,
-                "batch_size":   1,
-                "batch_id":     sample_idx,
-                "is_selected":  True,
-                "passed_tests": passed,
-                "cpu_instructions": None,
-                "e_exec_j":     None,
-                "e_optim_wh":   e_optim_wh,
-                "_code": code,
-                "_test_code": test_code,  
-            })
-    return samples
+#             elif task_id.startswith("Mbpp/"):
+#                 prob = mbpp_tasks[task_id]
+#                 test_code = prob["assertion"]
+
+#             samples.append({
+#                 "task_id":      f"{dataset.upper()}/{task_id}" if "/" not in task_id else task_id,
+#                 "model":        model,
+#                 "method":       method,
+#                 "iteration":    iteration,
+#                 "sample_idx":   sample_idx,
+#                 "batch_size":   1,
+#                 "batch_id":     sample_idx,
+#                 "is_selected":  True,
+#                 "passed_tests": passed,
+#                 "cpu_instructions": None,
+#                 "e_exec_j":     None,
+#                 "e_optim_wh":   e_optim_wh,
+#                 "_code": code,
+#                 "_test_code": test_code,  
+#             })
+#     return samples
 
 
 # ─────────────────────────────────────────────────────────────────────────────
 # STEP 1: GENERATE — run evalplus + log GPU energy
 # ─────────────────────────────────────────────────────────────────────────────
+# def parse_evalopti_results(
+#     result_path,
+#     model,
+#     method,
+#     iteration,
+#     e_optim_wh,
+# ):
 
 def cmd_generate(args):
     Path(OUTPUT_ROOT).mkdir(exist_ok=True)
@@ -249,14 +251,15 @@ def cmd_generate(args):
     print(f"  GPU log → {gpu_csv}")
 
     evalplus_cmd = (
-    f"evalplus.codegen "
-    f"{model} "
-    f"{dataset} "
-    f"--backend openai "
-    f"--base-url http://localhost:8000/v1 "
-    f"--greedy "
-    f"--root {args.results_dir} "
-    f"2>&1 | tee {OUTPUT_ROOT}/evalplus_{method}_iter{iteration}.log"
+        f"python -m evalplus.evalopti "
+        f"--optimizer {method} "
+        f"--iterations {iteration} "
+        f"--model \"{model}\" "
+        f"--backend openai "
+        f"--base-url http://localhost:8000/v1 "
+        f"--root {args.results_dir} "
+        f"2>&1 | tee "
+        f"{OUTPUT_ROOT}/evalopti_{method}_iter{iteration}.log"
     )
 
     logger = GpuLogger(gpu_csv)
@@ -268,22 +271,27 @@ def cmd_generate(args):
     if ret != 0:
         print(f"  [WARN] evalplus exited with code {ret}")
 
-    # Parse evalplus outputs
-    raw_path, eval_path = find_evalplus_files(
-        args.results_dir, model, dataset
+    result_path = find_evalopti_results(
+        args.results_dir,
+        model,
     )
-    if not raw_path or not eval_path:
-        print(f"  [ERROR] Could not find evalplus output files in "
-              f"{args.results_dir}/{dataset}/")
-        print(f"  Expected: {model.replace('/', '--')}*.raw.jsonl")
+    
+    if result_path is None:
+        print("Cannot find EvalOpti results")
         return
+    # if not raw_path or not eval_path:
+    #     print(f"  [ERROR] Could not find evalplus output files in "
+    #           f"{args.results_dir}/{dataset}/")
+    #     print(f"  Expected: {model.replace('/', '--')}*.raw.jsonl")
+    #     return
 
-    print(f"\n  Parsing: {Path(raw_path).name}")
-    samples = parse_evalplus_to_samples(
-        raw_path, eval_path,
-        model=model, method=method,
-        iteration=iteration, e_optim_wh=wh,
-        dataset=dataset,
+    print(f"\nParsing: {Path(result_path).name}")
+    samples = parse_evalopti_results(
+        result_path=result_path,
+        model=model,
+        method=method,
+        iteration=iteration,
+        e_optim_wh=wh,
     )
 
     n_pass = sum(1 for s in samples if s["passed_tests"])
@@ -1159,7 +1167,7 @@ if __name__ == "__main__":
     g = sub.add_parser("generate",
                        help="Run evalplus + log GPU energy for one method/iteration")
     g.add_argument("--model",       default="Qwen/Qwen2.5-Coder-7B-Instruct")
-    g.add_argument("--dataset",     default="humaneval")
+    g.add_argument("--dataset", default="evalperf")
     g.add_argument("--method",      default="simple")
     g.add_argument("--iteration",   type=int, default=0)
     g.add_argument("--results_dir", default="evalplus_results")
