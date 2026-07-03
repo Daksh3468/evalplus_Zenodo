@@ -196,6 +196,7 @@ def evaluate_optimizers(
             calibration_time)  # We completely replace so as to not inflate the idle energy consumption
         rich.print(Rule(""))
         rich.print(Rule(f"Iteration n°{iter_current}/{iterations}"))
+        t_gpu_phase_start = time.time()
         if iter_current <= 0:
             rich.print(f"Generating samples...")
             if optimizer_model.can_generate_samples_from_scratch():
@@ -253,11 +254,26 @@ def evaluate_optimizers(
             if generation_energy.duration > 30:
                 energy_measures["generation"] += generation_energy
 
+        t_gpu_phase_end = time.time()
+
         rule("Correctness Checking...")
         config["samples_path"] = samples_path
         brief_result_path, result_path = build_result_paths(samples_path)
         prev_results_path = result_path
         all_results_paths.append(result_path)
+
+        # Write sidecar as soon as result_path is known, before correctness/profiling run.
+        gpu_phase_path = result_path.replace("_evalopti_results.json", "_gpu_phase.json")
+        with open(gpu_phase_path, "w") as f:
+            json.dump({
+                "iteration": iter_current,
+                "gpu_phase_start": t_gpu_phase_start,
+                "gpu_phase_end": t_gpu_phase_end,
+                "gpu_phase_duration_s": t_gpu_phase_end - t_gpu_phase_start,
+            }, f)
+        rich.print(f"GPU phase timing written to {gpu_phase_path} "
+                   f"({t_gpu_phase_end - t_gpu_phase_start:.1f}s)")
+
         task_eval_results: dict[str, TaskEvalResult] = init_eval_results(ptasks)
         if not i_just_wanna_run and os.path.exists(result_path):
             task_eval_results, previous_energy_results = resume_results_if_possible(max_profile, min_correct, n_samples,
