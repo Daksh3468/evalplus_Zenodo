@@ -520,7 +520,10 @@ def script(
 ):
     max_profile = max_profile or min(min_correct * 2, n_samples)
     assert min_correct <= max_profile <= n_samples
-    simple_test_profiler()  # test linux perf setup
+    try:
+        simple_test_profiler()
+    except Exception as e:
+        print(f"[WARNING] Skipping profiler check: {e}")  # test linux perf setup
 
     energy_measures = {}
 
@@ -546,8 +549,8 @@ def script(
     ptasks = get_evalperf_data()
 
     # Filter ptasks to only keep one, useful for debugging
-    task_id_to_keep = "HumanEval/16"
-    ptasks = {task_id_to_keep: ptasks[task_id_to_keep]}
+    # task_id_to_keep = "HumanEval/16"
+    # ptasks = {task_id_to_keep: ptasks[task_id_to_keep]}
 
     max_workers = get_max_workers(parallel)
     brief_result_path, result_path = build_result_path(samples)

@@ -11,10 +11,9 @@ from typing import Any, Optional
 
 import polars as pl
 import rich
-from polars.polars import NoDataError
+from polars.exceptions import NoDataError
 
-PERF_COEFFICIENT: Optional[
-    float] = None  # If set, the coefficient to multiple the duration counter in perf output in order to obtain the duration in seconds. Varies between hardwares
+PERF_COEFFICIENT: Optional[float] = 1e-9 # If set, the coefficient to multiple the duration counter in perf output in order to obtain the duration in seconds. Varies between hardwares
 
 
 @dataclass

@@ -9,7 +9,7 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 from datetime import datetime
 from typing import Any, Dict, List, Optional, Tuple
 from warnings import warn
-
+from evalplus.data import get_evalperf_data
 import numpy as np
 from termcolor import cprint
 from tqdm import tqdm
@@ -192,6 +192,10 @@ def evaluate(
                 dataset_hash,
                 MBPP_OUTPUT_NOT_NONE_TASKS,
             )
+        elif dataset == "evalperf":
+            problems = get_evalperf_data()
+            dataset_hash = "evalperf"
+            expected_output = get_groundtruth(problems, dataset_hash, [])
 
         results = {
             "date": datetime.now().strftime("%Y-%m-%d %H:%M"),

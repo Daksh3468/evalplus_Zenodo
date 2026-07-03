@@ -166,7 +166,6 @@ def _should_skip_task(id_range, p, task_id):
     return should_skip
 
 
-@measure_energy(gpu=True)
 def run_codegen(
         model: str,
         dataset: str,
