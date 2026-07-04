@@ -9,9 +9,9 @@ Lightning blocks perf_event_paranoid, so Cirron instruction counting
 That's the backend evalopti.py's perf_worker() needs both for DPS scoring
 and for setting CodeEvalResult.profiled — which gates chaining into the
 next iteration for any optimizer where can_accept_errored_samples() is
-False (true for all four optimizers here). Rather than patch around
-that, this bypasses evalopti.py's CLI entirely and drives the optimizer
-classes directly:
+False (true for simple, cot, cod; False i.e. errored samples ARE accepted
+for self-refine-nl-feedback). Rather than patch around that, this bypasses
+evalopti.py's CLI entirely and drives the optimizer classes directly:
 
   - GENERATION/OPTIMIZATION (GPU-bound): runs here. GPU energy is
     measured directly around each call via nvidia-smi polling.
@@ -23,9 +23,14 @@ classes directly:
     cpu_rapl_pipeline.py fills these in later, locally.
 
 Chaining rule (replaces evalopti.py's `passed AND profiled` filter):
-    forward only samples where r.passed is True
-  (all four optimizers here have can_accept_errored_samples() == False,
-   so this is the only branch that applies — no errored-sample pass-through)
+    forward samples where r.passed is True, OR where the optimizer's
+    can_accept_errored_samples() is True.
+  For simple / cot / cod, can_accept_errored_samples() is False, so this
+  reduces to "forward passed samples only". For self-refine-nl-feedback,
+  can_accept_errored_samples() is True, so BOTH passed and failed samples
+  are forwarded — matching the paper's Self-Refine-NL method, whose
+  feedback step is designed to critique/fix incorrect-or-inefficient
+  code, not just speed up code that already works.
 
 Why these four are a clean fit for this split:
   - Simple / CoT / CoD: prompts only use code_content + task_description,
@@ -232,15 +237,17 @@ def run_pipeline(
                 first, _ = codegen_res
                 samples_path = first[0] if isinstance(first, tuple) else first
             else:
-                # Chain on `passed` only — profiling isn't available on Lightning.
-                # (can_accept_errored_samples() is False for all four optimizers
-                # here, so this is strictly "forward passed samples only".)
+                # Chain on `passed`, unless the optimizer can accept errored
+                # samples (True only for self-refine-nl-feedback here), in
+                # which case forward everything regardless of pass/fail.
+                # Profiling isn't available on Lightning, so `r.profiled`
+                # is never checked here (that's evalopti.py's job).
                 samples_to_optimize = defaultdict(list)
                 for task_id, task in prev_results.items():
                     if task_id not in ptasks:
                         continue
                     for r in task.results:
-                        if r.passed:
+                        if r.passed or optimizer_model.can_accept_errored_samples():
                             samples_to_optimize[task_id].append(r)
                 samples_path = optimizer_model.optimize(
                     samples_to_optimize=samples_to_optimize, dataset_dict=dataset_dict,
